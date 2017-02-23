@@ -1,0 +1,22 @@
+{
+  "name": "worktile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "less": "^2.7.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0"
+  }
+}
