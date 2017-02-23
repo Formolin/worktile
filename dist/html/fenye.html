@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--<link rel="stylesheet/less" href="less/index.less">-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="node_modules/angular/angular.js"></script>
+    <title>Worktile - 更好用的企业协作平台</title>
+</head>
+<body ng-app="myApp">
+<header id="header" ng-controller="headerController">
+    <!--nav开始-->
+    <nav class="navbar navbar-default navbar-fixed-top hov" ng-class="{white:flag}" ng-mouseover="bgw()" ng-mouseleave="bgb()">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" ng-click="myHide()">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <i class="wtf-worktile"></i>
+                    <i class="wtf-worktiletext"></i>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+            <ul class="nav navbar-nav navbar-right uls">
+                <li >
+                    <a href="html/fenye.html" >产品</a>
+                    <ul >
+                        <li class="pro" ><a href="">企业版</a></li>
+                        <li class="pro"><a href="">基础版</a></li>
+                    </ul>
+                </li>
+                <li class="jiage">
+                    <a href="#">价格</a>
+
+                </li>
+                <li>
+                    <a href="#">解决方案</a>
+                    <ul>
+                        <li class="pro"><a href="">研发解决方案</a></li>
+                        <li class="pro"><a href="">电商解决方案</a></li>
+                        <li class="pro"><a href="">OKR探究实践</a></li>
+                        <li class="pro"><a href="">HR解决方案</a></li>
+                        <li class="pro"><a href="">产品解决方案</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" >支持</a>
+                    <ul>
+                        <li class="pro"><a href="">官方博客</a></li>
+                        <li class="pro"><a href="">用户社区</a></li>
+                        <li class="pro"><a href="">客户成功</a></li>
+                        <li class="pro"><a href="">帮助中心</a></li>
+                    </ul>
+                </li>
+                <li class="last">
+                    <a href="" class="login"><button type="button" class="btn btn-success ">登录</button></a>
+                    <ul>
+                        <li class="pro"><a href="">登录企业版</a></li>
+                        <li class="pro"><a href="">登陆基础版</a></li>
+                    </ul>
+                </li>
+
+                <button type="button" class="btn btn-success zhuce"><a href="">注册</a></button>
+            </ul>
+            <div class="collapse navbar-collapse navbarWidth" id="bs-example-navbar-collapse-1">
+                <ul class="hideUl">
+                    <li class="box text-center" ><a href="">企业版</a></li>
+                    <li class="box text-center"><a href="">基础版</a></li>
+                    <li class="box text-center"><a href="">研发解决方案</a></li>
+                    <li class="box text-center"><a href="">电商解决方案</a></li>
+                    <li class="box text-center"><a href="">OKR探究实践</a></li>
+                    <li class="box text-center"><a href="">HR解决方案</a></li>
+                    <li class="box text-center"><a href="">产品解决方案</a></li>
+                    <li class="box text-center"><a href="">官方博客</a></li>
+                    <li class="box text-center"><a href="">用户社区</a></li>
+                    <li class="box text-center"><a href="">客户成功</a></li>
+                    <li class="box text-center"><a href="">帮助中心</a></li>
+                    <li class="box text-center"><a href="">登录企业版</a></li>
+                    <li class="box text-center"><a href="">登陆基础版</a></li>
+                    <li class="box text-center"><a href="" class="last btn btn-regist">注册</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--nav结束-->
+
+
+    <!--轮播图开始-->
+    <div class="slider">
+        <div class="box">
+            <div class="imgs cur one" style="background-image: url('img/index_all_bg_0.jpg')">
+                <div class="container">
+                    <div class="content-one text-center">
+                        更好用的企业协作平台
+                    </div>
+                    <div class="content-two text-center">
+                        <p> Worktile，让工作更简单<br>
+                            &nbsp;</p>
+                    </div>
+                    <div class="content-three text-center">
+                        <a href="" >免费注册</a>
+                    </div>
+                </div>
+            </div>
+            <div class="imgs one" style="background-image: url('img/index_all_bg_1.jpg')">
+                <div class="container">
+                    <div class="content-one text-center">
+                        Worktile +<img src="img/index_all_bg_dingtalk_icon.png" width="48" height="60" alt="">
+                    </div>
+                    <div class="content-two text-center">
+                        <p> 项目管理用 Worktile，让企业协作更高效 <br>
+                            工作交流用钉钉，让任务必达</p>
+                    </div>
+                    <div class="content-three text-center">
+                        <a href="" >免费注册</a>
+                        <h4>价值20万的</h4><br/>
+                        钉钉办公软件免费抢
+                    </div>
+                </div>
+            </div>
+            <div class="imgs one" style="background-image: url('img/index_all_bg_2.jpg')">
+                <div class="container">
+                    <div class="content-one text-center">
+                        一站式研发管理解决方案
+                    </div>
+                    <div class="content-two text-center">
+                        <p>项目进度清晰掌握，快速跟进产品Bug
+                            <br>
+                            多维度统计报表，文件文档有序管理</p>
+                    </div>
+                    <div class="content-three text-center" style="font-size: 18px">
+                        <a href="" >免费注册</a>
+                        <br/>
+                        免费获取解决方案 &gt;&gt;
+                    </div>
+                </div>
+            </div>
+            <div class="imgs one" style="background-image: url('img/index_all_bg_7.jpg')">
+                <div class="container">
+                    <div class="content-one text-center">
+                        HR 解决方案
+                    </div>
+                    <div class="content-two text-center">
+                        <p> 告别冗长混乱的招聘流程，实现清晰便捷的员工管理<br>
+                            轻松安排培训事宜，灵活应对考勤审批</p>
+                    </div>
+                    <div class="content-three text-center">
+                        <a href="" >免费注册</a>
+                        <br/>
+                        免费获取解决方案 &gt;&gt;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ctrl">
+            <ol class="carousel-indicators" style="margin-bottom: 50px">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+        </div>
+
+    </div>
+    <!--轮播图结束-->
+</header>
+
+<!--header end-->
+
+<section class="pros">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-6 col-sm-3 text-center">
+                <a href="">
+                    <img src="img/index-tab-1.png" alt="">
+                    <p>产品功能</p>
+                    <div> 高效协作、即时沟通、移动办公，提供一站式企业协作平台</div>
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-3 text-center">
+                <a href="">
+                    <img src="img/index-tab-2.png" alt="">
+                    <p>客户案例</p>
+                    <div> 你的同行都在使用 Worktile，提升员工工作效率，提升企业竞争力</div>
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-3 text-center">
+                <a href="">
+                    <img src="img/index-tab-3.png" alt="">
+                    <p>解决方案</p>
+                    <div> 让每个行业、每个角色都能轻松工作，提供完善的解决方案</div>
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-3 text-center">
+                <a href="">
+                    <img src="img/index-tab-4.png" alt="">
+                    <p>数据安全</p>
+                    <div> 完善的安全措施，自定义企业安全策略，全力保护企业数据安全</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pros-one">
+    <div class="container">
+        <div class="box">
+
+            <div class="content">
+                <div class="con-tit">助力提升您的工作效率</div>
+                <div class="con-con">Worktile 致力于提高企业成员之间的沟通与协作效率，进而提升企业核心竞争力，包括企业IM、任务、日历、网盘、审批和请假等应用。</div>
+                <div class="con-foot">
+                    <ul>
+                        <li><i class="glyphicon glyphicon-envelope"></i></li>
+                        <li><i class="glyphicon glyphicon-list-alt"></i></li>
+                        <li><i class="glyphicon glyphicon-check"></i></li>
+                        <li><i class="glyphicon glyphicon-folder-open"></i></li>
+                        <li><i class="glyphicon glyphicon-stats"></i></li>
+                        <li><i class="glyphicon glyphicon-send"></i></li>
+                        <li><i class="glyphicon glyphicon-globe"></i></li>
+                        <li><i class="glyphicon glyphicon-comment"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pros-two">
+    <div class="container">
+        <div class="top text-center">
+            <h2>他们都在使用</h2>
+            <img src="img/index-partner.png" alt="">
+        </div>
+        <div class="bottom text-center">
+            <h2>提升员工工作效率，提升企业竞争力</h2>
+            <a href="">免费注册</a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-4 text-center">
+                <ul>
+                    <li class="curr">产品</li>
+                    <li><a href="">产品介绍</a></li>
+                    <li><a href="">价格</a></li>
+                    <li><a href="">客户端</a></li>
+                    <li><a href="">更新日志</a></li>
+                    <li><a href="">数据安全</a></li>
+                    <li><a href="">开发者中心</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4 text-center">
+                <ul>
+                    <li class="curr">服务</li>
+                    <li><a href="">解决方案</a></li>
+                    <li><a href="">客户案例</a></li>
+                    <li><a href="">帮助中心</a></li>
+                    <li><a href="">视频教程</a></li>
+                    <li><a href="">官方博客</a></li>
+                    <li><a href="">用户社区</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4 text-center">
+                <ul>
+                    <li class="curr">公司</li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">媒体报道</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">隐私声明</a></li>
+                    <li><a href="">服务条款</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 text-center">
+                <ul>
+                    <li class="curr">更多</li>
+                    <li><a href="">合作伙伴</a></li>
+                    <li><a href="">创业者扶植计划</a></li>
+                    <li><a href="">Workshop</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <ul>
+                    <li class="curr">联系顾问</li>
+                    <li><a href="">+86 400 805 6966</a></li>
+                    <li class="hidden-sm hidden-xs">
+                        <ul class="uls">
+                            <li>
+                                <img src="img/weixin-ico.png" alt="">
+
+                            </li>
+                            <li><img src="img/weibo.png" alt=""></li>
+                            <li><img src="img/msg.png" alt=""></li>
+                            <li><img src="img/xinhao.png" alt=""></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="foot text-center">
+            <p >© 2017 Worktile.com
+                <br>
+                京ICP备13017353号-3 京公网安备11010802012357号</p>
+            <img src="img/trust-icon.png" alt="">
+            <img src="img/safe-icon.gif" alt="">
+        </div>
+    </div>
+</footer>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/less/dist/less.js"></script>
+<script src="js/index.js"></script>
+<script src="js/myApp.js"></script>
+</body>
+</html>
